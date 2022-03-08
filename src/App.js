@@ -23,9 +23,9 @@ console.log(margaritas)
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/margaritas" element={<MargaritaList margaritas={margaritas} />} />
-        <Route path="/margaritas/:margID"element={<MargaritaCard margaritas={margaritas}/>}/>
+        <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas}/>}/>
         <Route path="/newmargarita" element={<NewMargarita/>} />
       </Routes>
     </div>

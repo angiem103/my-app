@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React from 'react';
+import { Link } from "react-router-dom";
 
 function MargaritaList({margaritas}) {
+  console.log(margaritas)
   const renderMargaritas = margaritas.map((marg) => (
     <li key={marg.id}>
       <Link to={`/margaritas/${marg.id}`}>{marg.name}</Link>
