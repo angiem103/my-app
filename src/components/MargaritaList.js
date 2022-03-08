@@ -1,9 +1,12 @@
 import React from 'react'
+import MargaritaCard from './MargaritaCard'
 
-function MargaritaList() {
+function MargaritaList({margaritas}) {
   return (
-    <div>Margarita List</div>
+    <div>
+      {margaritas.map(margarita => <MargaritaCard margarita={margarita} key={margarita.id}/>)}
+    </div>
   )
 }
 
-export default MargaritaList; 
+export default MargaritaList;
