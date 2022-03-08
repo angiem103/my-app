@@ -30,7 +30,7 @@ export default function NavBar() {
                 <Typography variant="h6" className={classes.title}>
                 <Button color="inherit" component={ Link } to="/home">Margarita Alley</Button>
                 </Typography>
-                <Button color="inherit" component={ Link } to="/margaritalist">Margarita List</Button>
+                <Button color="inherit" component={ Link } to="/margaritas">Margarita List</Button>
                 <Button color="inherit" component={ Link } to="/newmargarita">Add a Margarita</Button>
             </Toolbar>
         </Container>

@@ -1,12 +1,15 @@
 import React from 'react'
-import MargaritaCard from './MargaritaCard'
+import { Link } from "react-router-dom"
 
 function MargaritaList({margaritas}) {
-  return (
-    <div>
-      {margaritas.map(margarita => <MargaritaCard margarita={margarita} key={margarita.id}/>)}
-    </div>
-  )
+  const renderMargaritas = margaritas.map((marg) => (
+    <li key={marg.id}>
+      <Link to={`/margaritas/${marg.id}`}>{marg.name}</Link>
+    </li>
+  ))
+
+  return <ul>{renderMargaritas}</ul>
+
 }
 
 export default MargaritaList;

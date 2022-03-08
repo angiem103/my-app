@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import { Routes, Route } from 'react-router-dom'
 import MargaritaList from "./components/MargaritaList";
 import NewMargarita from "./components/NewMargarita";
+import MargaritaCard from "./components/MargaritaCard"
 import { useState, useEffect } from "react";
 
 function App() {
@@ -16,14 +17,15 @@ function App() {
     .then(margaritas => setMargaritas(margaritas))
   }, [])
 
-  console.log(margaritas)
+console.log(margaritas)
 
   return (
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/home" element={<Home/>} />
-        <Route path="/margaritalist" element={<MargaritaList margaritas={margaritas} />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/margaritas" element={<MargaritaList margaritas={margaritas} />} />
+        <Route path="/margaritas/:margID"element={<MargaritaCard margaritas={margaritas}/>}/>
         <Route path="/newmargarita" element={<NewMargarita/>} />
       </Routes>
     </div>
