@@ -10,7 +10,7 @@ function MargaritaCard({margaritas}) {
 
   return (
     <div className="margarita">
-      <h3>{margaritas[params.id].name}</h3>
+      <h3>{margaritas[params.id - 1].name}</h3>
       {/* <img src={margarita.image} alt={margarita.name}></img> */}
     </div>
   )

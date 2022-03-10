@@ -7,6 +7,7 @@ import NewMargarita from "./components/NewMargarita";
 import MargaritaCard from "./components/MargaritaCard"
 import { useState, useEffect } from "react";
 
+
 function App() {
 
   const [margaritas, setMargaritas] = useState([])

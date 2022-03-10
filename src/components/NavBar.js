@@ -8,27 +8,23 @@ import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
+
+    title: {
+        paddingRight: '100px',
+    },
+  
 }));
 
 export default function NavBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Container>
+    <div >
+      <AppBar  position="static" color="inherit">
+        <Container >
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
-                <Button color="inherit" component={ Link } to="/home">Margarita Alley</Button>
+                <Button color="inherit" component={ Link } to="/home">Home</Button>
                 </Typography>
                 <Button color="inherit" component={ Link } to="/margaritas">Margarita List</Button>
                 <Button color="inherit" component={ Link } to="/newmargarita">Add a Margarita</Button>

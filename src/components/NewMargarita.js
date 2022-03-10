@@ -1,25 +1,17 @@
 import React from 'react'
+import './style.css'; 
 
 function NewMargarita() {
   return (
-    <form>
-        <h2>Add A New Recipe</h2>
-        <label>
-            Name:
-        <input type="text" name="name"/>
-        <br></br>
-            Ingredients:
-        <input type="text" name="ingredients"/>
-        <br></br>
-            Directions:
-        <input type="text" name="directions"/>
-        <br></br>
-            Image Url:
-        <input tyep="text" name="image"/>
-        </label>
-        <br></br>
-        <input type="submit" value="Submit" />
-    </form>
+
+<div  className='form-box'>
+  <form>
+    <label>Add a Margarita</label>
+    <input className='form-input' type="text" name="name" placeholder="Name"/>
+    <input className='form-input' type="text" name="img" placeholder="Image URL"/>
+    <input type="submit" value="Submit" className='submit'/>
+  </form>
+</div>
   )
 }
 
