@@ -19,7 +19,7 @@ function App() {
   }, [])
 
   function addMargarita(newMargarita){
-    console.log(newMargarita)
+    setMargaritas([...margaritas,newMargarita])
   }
 
   return (
