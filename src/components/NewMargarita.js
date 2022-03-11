@@ -31,7 +31,7 @@ function NewMargarita({onAddMargarita}) {
     .then(r => r.json())
     .then(margarita => {
       onAddMargarita(margarita)
-      navigate.push("/drinklist")
+      navigate("/margaritas")
     })
   }
 

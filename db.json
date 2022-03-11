@@ -13,6 +13,20 @@
       "ingredients": "1 1/2 oz of tequila, 1/2 oz lime juice, 1 oz of simple syrup, jalapeños, ice",
       "directions": "Place the tequila, simple syrup, lime juice, and 1 to 2 slices of jalapeño in a cocktail. Using the muddler, mix ingredients well. Add ice to the coctail shaker and shake for 10 seconds, and then strain into a prepared cocktail glass. Garnish with a lime wedge if desired.",
       "image": "https://i0.wp.com/kfor.com/wp-content/uploads/sites/3/2022/02/MargaritaGettyImages-957885008.jpg?w=2000&ssl=1"
+    },
+    {
+      "name": "strawberry",
+      "ingredients": "limes",
+      "directions": "stir everything together",
+      "image": "123",
+      "id": 3
+    },
+    {
+      "name": "strawberry",
+      "ingredients": "limes",
+      "directions": "stir everything together",
+      "image": "123",
+      "id": 4
     }
   ]
 }
