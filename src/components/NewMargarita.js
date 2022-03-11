@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'; 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function NewMargarita({onAddMargarita}) {
 
@@ -8,6 +9,8 @@ function NewMargarita({onAddMargarita}) {
   const [imgURL, setImgURL] = useState('')
   const [ingredients, setIngredients] = useState('')
   const [directions, setDirections] = useState('')
+
+  const navigate = useNavigate()
 
   function handleSubmit(e){
     e.preventDefault()
@@ -26,7 +29,10 @@ function NewMargarita({onAddMargarita}) {
       body: JSON.stringify(newMarg)
     })
     .then(r => r.json())
-    .then(margarita => onAddMargarita(margarita))
+    .then(margarita => {
+      onAddMargarita(margarita)
+      navigate.push("/drinklist")
+    })
   }
 
   return (

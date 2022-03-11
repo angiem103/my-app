@@ -27,7 +27,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/home" element={<Home/>} />
-        <Route path="/margaritas" element={<DrinkList margaritas={margaritas} />} />
+        <Route path="/drinklist" element={<DrinkList margaritas={margaritas} />} />
         <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas}/>}/>
         <Route path="/newmargarita" element={<NewMargarita onAddMargarita={addMargarita}/>} />
       </Routes>
