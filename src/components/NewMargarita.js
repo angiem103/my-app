@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'; 
 import { useState } from 'react';
 
-function NewMargarita() {
+function NewMargarita({onAddMargarita}) {
 
   const [name, setName] = useState('')
   const [imgURL, setImgURL] = useState('')
@@ -18,7 +18,7 @@ function NewMargarita() {
       image: imgURL
     }
 
-    console.log(newMarg)
+    onAddMargarita(newMarg)
   }
 
   return (

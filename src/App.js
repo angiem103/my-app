@@ -18,7 +18,9 @@ function App() {
     .then(margaritas => setMargaritas(margaritas))
   }, [])
 
-console.log(margaritas)
+  function addMargarita(newMargarita){
+    console.log(newMargarita)
+  }
 
   return (
     <div className="App">
@@ -27,7 +29,7 @@ console.log(margaritas)
         <Route path="/home" element={<Home/>} />
         <Route path="/margaritas" element={<DrinkList margaritas={margaritas} />} />
         <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas}/>}/>
-        <Route path="/newmargarita" element={<NewMargarita/>} />
+        <Route path="/newmargarita" element={<NewMargarita onAddMargarita={addMargarita}/>} />
       </Routes>
     </div>
   );
