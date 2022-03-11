@@ -18,7 +18,15 @@ function NewMargarita({onAddMargarita}) {
       image: imgURL
     }
 
-    onAddMargarita(newMarg)
+    fetch("http://localhost:3001/margaritas", {
+      method: 'POST',
+      headers: {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify(newMarg)
+    })
+    .then(r => r.json())
+    .then(margarita => onAddMargarita(margarita))
   }
 
   return (

@@ -1,18 +1,18 @@
 {
-    "margaritas": [
-        {
-            "id": 1,
-            "name": "Classic Margarita",
-            "ingredients": "1 1/2 oz of tequila, 1/2 oz lime juice, 1 oz of simple syrup, ice",
-            "directions": "Place the tequila, simple syrup, and lime juice in a cocktail shaker filled with ice. Shake for 10 seconds, and then strain into a prepared cocktail glass. Garnish with a lime wedge if desired.",
-            "image": "https://media.istockphoto.com/photos/alcoholic-lime-margarita-with-tequila-picture-id957892610?k=20&m=957892610&s=612x612&w=0&h=9slc2gIylrzy_kc1C45bJnkFZJL67xJZbeW2w4P8_a8="
-        },
-        {
-            "id": 2,
-            "name": "Spicy Margarita",
-            "ingredients": "1 1/2 oz of tequila, 1/2 oz lime juice, 1 oz of simple syrup, jalapeños, ice",
-            "directions": "Place the tequila, simple syrup, lime juice, and 1 to 2 slices of jalapeño in a cocktail. Using the muddler, mix ingredients well. Add ice to the coctail shaker and shake for 10 seconds, and then strain into a prepared cocktail glass. Garnish with a lime wedge if desired.",
-            "image": "https://i0.wp.com/kfor.com/wp-content/uploads/sites/3/2022/02/MargaritaGettyImages-957885008.jpg?w=2000&ssl=1"
-        }
-    ]
+  "margaritas": [
+    {
+      "id": 1,
+      "name": "Classic Margarita",
+      "ingredients": "1 1/2 oz of tequila, 1/2 oz lime juice, 1 oz of simple syrup, ice",
+      "directions": "Place the tequila, simple syrup, and lime juice in a cocktail shaker filled with ice. Shake for 10 seconds, and then strain into a prepared cocktail glass. Garnish with a lime wedge if desired.",
+      "image": "https://media.istockphoto.com/photos/alcoholic-lime-margarita-with-tequila-picture-id957892610?k=20&m=957892610&s=612x612&w=0&h=9slc2gIylrzy_kc1C45bJnkFZJL67xJZbeW2w4P8_a8="
+    },
+    {
+      "id": 2,
+      "name": "Spicy Margarita",
+      "ingredients": "1 1/2 oz of tequila, 1/2 oz lime juice, 1 oz of simple syrup, jalapeños, ice",
+      "directions": "Place the tequila, simple syrup, lime juice, and 1 to 2 slices of jalapeño in a cocktail. Using the muddler, mix ingredients well. Add ice to the coctail shaker and shake for 10 seconds, and then strain into a prepared cocktail glass. Garnish with a lime wedge if desired.",
+      "image": "https://i0.wp.com/kfor.com/wp-content/uploads/sites/3/2022/02/MargaritaGettyImages-957885008.jpg?w=2000&ssl=1"
+    }
+  ]
 }
