@@ -7,8 +7,8 @@ function DrinkList({ margaritas }) {
 
   const renderMargaritas = margaritas.map((marg) => (
   
-    <div>
-      <li key={marg.id} className='link'>
+    <div key={marg.id}>
+      <li>
       <Link to={`/margaritas/${marg.id}`}>{marg.name}</Link>
       </li>
       <br></br>
