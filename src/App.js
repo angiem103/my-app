@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import { Routes, Route } from 'react-router-dom'
-import MargaritaList from "./components/MargaritaList";
+import DrinkList from "./components/DrinkList";
 import NewMargarita from "./components/NewMargarita";
 import MargaritaCard from "./components/MargaritaCard"
 import { useState, useEffect } from "react";
@@ -25,7 +25,7 @@ console.log(margaritas)
       <NavBar />
       <Routes>
         <Route path="/home" element={<Home/>} />
-        <Route path="/margaritas" element={<MargaritaList margaritas={margaritas} />} />
+        <Route path="/margaritas" element={<DrinkList margaritas={margaritas} />} />
         <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas}/>}/>
         <Route path="/newmargarita" element={<NewMargarita/>} />
       </Routes>
