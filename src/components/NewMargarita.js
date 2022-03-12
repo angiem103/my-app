@@ -21,7 +21,7 @@ function NewMargarita({onAddMargarita}) {
       image: imgURL
     }
 
-    fetch("http://localhost:3001/margaritas", {
+    fetch("http://localhost:3000/margaritas", {
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json'

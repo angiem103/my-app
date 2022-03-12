@@ -13,7 +13,7 @@ function App() {
   const [margaritas, setMargaritas] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3001/margaritas")
+    fetch("http://localhost:3000/margaritas")
     .then(r => r.json())
     .then(margaritas => setMargaritas(margaritas))
   }, [])
@@ -26,10 +26,10 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/home" element={<Home/>} />
         <Route path="/margaritas" element={<DrinkList margaritas={margaritas} />} />
         <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas}/>}/>
         <Route path="/newmargarita" element={<NewMargarita onAddMargarita={addMargarita}/>} />
+        <Route path="/" element={<Home/>} />
       </Routes>
     </div>
   );

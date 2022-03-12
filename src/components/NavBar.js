@@ -24,7 +24,7 @@ export default function NavBar() {
         <Container >
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
-                <Button color="inherit" component={ Link } to="/home">Home</Button>
+                <Button color="inherit" component={ Link } to="/">Home</Button>
                 </Typography>
                 <Button color="inherit" component={ Link } to="/margaritas">Margarita List</Button>
                 <Button color="inherit" component={ Link } to="/newmargarita">Add a Margarita</Button>
