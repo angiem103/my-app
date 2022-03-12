@@ -4,19 +4,24 @@ import './style.css'
 
 function DrinkList({ margaritas }) {
 
+  const linkStyle = {
+    color: 'black',
+    fontSize: '25px',
+    textDecorationThickness: '2px',
+  };
 
   const renderMargaritas = margaritas.map((marg) => (
   
     <div key={marg.id}>
       <li>
-      <Link to={`/margaritas/${marg.id}`}>{marg.name}</Link>
+      <Link to={`/margaritas/${marg.id}`} style={linkStyle}>{marg.name}</Link>
       </li>
       <br></br>
     </div>
    )
   )
 
-return <ul>{renderMargaritas}</ul>
+return <ul className='margaritas'>{renderMargaritas}</ul>
 
 }
 

@@ -10,13 +10,13 @@ function MargaritaCard({margaritas}) {
 
   return (
     <div className='text'>
-      <h3>{margarita.name}</h3>
-      <img className = 'image' src={margarita.image} alt={margarita.name}></img>
+      <h3>{margarita?.name}</h3>
+      <img className = 'image' src={margarita?.image} alt={margarita?.name}></img>
       <br></br>
       Ingredients:
-      <p>{margarita.ingredients}</p>
+      <p>{margarita?.ingredients}</p>
       Directions:
-      <p>{margarita.directions}</p>
+      <p>{margarita?.directions}</p>
     </div>
   )
 }
