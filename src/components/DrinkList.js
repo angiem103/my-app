@@ -18,6 +18,7 @@ function DrinkList({ margaritas }) {
       </li>
       <br></br>
     </div>
+   
    )
   );
 
