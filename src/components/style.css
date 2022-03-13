@@ -26,6 +26,7 @@
   height: auto;
   padding-bottom: 20px;
   page-break-after: always;
+  background-repeat: repeat-y;
 }
 
 .text {
