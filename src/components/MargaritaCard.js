@@ -4,9 +4,8 @@ import './style.css'
 
 function MargaritaCard({margaritas}) {
 
-  console.log(margaritas)
-  const params = useParams()
-  const margarita = margaritas[params.id - 1]
+  const params = useParams();
+  const margarita = margaritas[params.id - 1];
 
   return (
     <div className='text'>
@@ -18,8 +17,8 @@ function MargaritaCard({margaritas}) {
       Directions:
       <p>{margarita?.directions}</p>
     </div>
-  )
-}
+  );
+};
 
 export default MargaritaCard;
 

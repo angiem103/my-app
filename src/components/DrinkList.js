@@ -19,10 +19,10 @@ function DrinkList({ margaritas }) {
       <br></br>
     </div>
    )
-  )
+  );
 
-return <ul className='margaritas'>{renderMargaritas}</ul>
+return <ul className='margaritas'>{renderMargaritas}</ul>;
 
-}
+};
 
 export default DrinkList;

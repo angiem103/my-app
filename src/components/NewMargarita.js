@@ -5,12 +5,12 @@ import { useNavigate } from 'react-router-dom';
 
 function NewMargarita({onAddMargarita}) {
 
-  const [name, setName] = useState('')
-  const [imgURL, setImgURL] = useState('')
-  const [ingredients, setIngredients] = useState('')
-  const [directions, setDirections] = useState('')
+  const [name, setName] = useState('');
+  const [imgURL, setImgURL] = useState('');
+  const [ingredients, setIngredients] = useState('');
+  const [directions, setDirections] = useState('');
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   function handleSubmit(e){
     e.preventDefault()
@@ -19,7 +19,7 @@ function NewMargarita({onAddMargarita}) {
       ingredients: ingredients,
       directions: directions,
       image: imgURL
-    }
+    };
 
     fetch("http://localhost:3000/margaritas", {
       method: 'POST',
@@ -33,7 +33,7 @@ function NewMargarita({onAddMargarita}) {
       onAddMargarita(margarita)
       navigate("/margaritas")
     })
-  }
+  };
 
   return (
 
@@ -47,7 +47,7 @@ function NewMargarita({onAddMargarita}) {
     <input type="submit" value="Submit" className='submit'/>
   </form>
 </div>
-  )
-}
+  );
+};
 
 export default NewMargarita;

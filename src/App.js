@@ -10,17 +10,17 @@ import { useState, useEffect } from "react";
 
 function App() {
 
-  const [margaritas, setMargaritas] = useState([])
+  const [margaritas, setMargaritas] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3000/margaritas")
     .then(r => r.json())
     .then(margaritas => setMargaritas(margaritas))
-  }, [])
+  }, []);
 
   function addMargarita(newMargarita){
     setMargaritas([...margaritas,newMargarita])
-  }
+  };
 
   return (
     <div className="App">
