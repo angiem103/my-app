@@ -3,6 +3,7 @@
 }
 
 .quote {
+  padding-top: 70px;
   margin-left: 30px;
   margin-right: 55%;
   text-align: center;
@@ -15,8 +16,9 @@
 .web-description {
   margin-left: 30px;
   margin-right: 55%;
-  font-size: 24px;
-  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .image {
