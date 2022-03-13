@@ -1,18 +1,22 @@
 import React from 'react'
 import { useParams } from "react-router-dom"
 import './style.css'
-
+import { useNavigate } from "react-router-dom"
 function MargaritaCard({margaritas, onDrinkDelete}) {
 
   const params = useParams();
   const margarita = margaritas[params.id - 1];
+  const navigate = useNavigate()
 
   function handleDelete() {
     fetch(`http://localhost:3000/margaritas/${margarita.id}`, {
       method: "DELETE",
     }) 
     .then(r => r.json())
-    .then(()=> onDrinkDelete(margarita))
+    .then(()=> {
+      onDrinkDelete(margarita)
+      navigate("/margaritas")
+    })
   };
 
   return (
