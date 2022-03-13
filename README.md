@@ -3,7 +3,7 @@
 ### Overview
 Welcome to Margarita Alley. When you visit this website you'll be able to browse through margarita recipes and add your own!
 
-
+![margarita gif](https://user-images.githubusercontent.com/91964904/158040880-5b5e4bc6-bc70-49b7-8d7e-9e62b3e98818.gif)
 
 ### Project Features (MVPs)
 - This is a single website application.
