@@ -9,7 +9,7 @@ Welcome to Margarita Alley. When you visit this website you'll be able to browse
 - This is a single website application.
 - It consist of 6 organized components; App, Home, NavBar, DrinkList, MargaritaCard, and NewMargarita.
 - It features 4 client-side routes (icluding a nested route), and programatic navigation.
-- This application utilizes a RESTful API and makes a GET and a POST request to the json server.
+- This application utilizes a RESTful API to render a list of drinks and makes a GET and a POST request to the json server.
 
 ### How to use
 - When the page loads, you will be directed to the Home page.
