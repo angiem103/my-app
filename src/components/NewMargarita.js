@@ -21,7 +21,7 @@ function NewMargarita({onAddMargarita}) {
       image: imgURL
     };
 
-    fetch("http://localhost:3000/margaritas", {
+    fetch(`${process.env.REACT_APP_API_URL}/margaritas`, {
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json'

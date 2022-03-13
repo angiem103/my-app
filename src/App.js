@@ -13,7 +13,7 @@ function App() {
   const [margaritas, setMargaritas] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/margaritas")
+    fetch(`${process.env.REACT_APP_API_URL}/margaritas`)
     .then(r => r.json())
     .then(margaritas => setMargaritas(margaritas))
   }, []);

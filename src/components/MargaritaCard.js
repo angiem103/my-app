@@ -9,7 +9,7 @@ function MargaritaCard({margaritas, onDrinkDelete}) {
   const navigate = useNavigate()
 
   function handleDelete() {
-    fetch(`http://localhost:3000/margaritas/${margarita.id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/margaritas/${margarita.id}`, {
       method: "DELETE",
     }) 
     .then(r => r.json())
