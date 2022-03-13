@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Margarita Alley
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
+Welcome to Margarita Alley. When you visit this website you'll be able to browse through margarita recipes and add your own!
 
-## Available Scripts
+![coffee menu gift](https://user-images.githubusercontent.com/91964904/148150324-3d394881-3e29-4c9f-8c6b-f074c6b34c93.gif)
 
-In the project directory, you can run:
+### Project Features (MVPs)
+- This is a single website application.
+- It consist of 6 organized components; App, Home, NavBar, DrinkList, MargaritaCard, and NewMargarita.
+- It features 4 client-side routes (icluding one nested route), and programatic navigation.
+- This application utilizes a RESTful API and makes a GET and a POST request to the json server.
 
-### `npm start`
+### How to use
+- When the page loads, you will be directed to the Home page.
+- You can navigate through the application by clicking on "Margarita List" or "Add A Margarita".
+- If you click on "Margarita List" a list of margaritas will render. You can click on each margarita individually to see the delicious recipes.
+- If you click on "Add A Margarita", you'll be able to add your favorite margarita recipe <3.
+    - When you click submit you will be redirected to the Margarita List.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Resources
 
-### `npm test`
+- https://www.tasteofhome.com/recipes/frozen-strawberry-basil-margarita/
+- https://www.seriouseats.com/classic-margarita-recipe-tequila-cocktail
+- https://www.wellplated.com/jalapeno-margarita/
+- https://somuchfoodblog.com/passion-fruit-margaritas/
+- https://www.mentalfloss.com/article/61794/11-refreshing-facts-about-margaritas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ENJOY!!
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
