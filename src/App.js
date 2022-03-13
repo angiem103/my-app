@@ -22,12 +22,17 @@ function App() {
     setMargaritas([...margaritas,newMargarita])
   };
 
+  function deleteRecipe(margarita) {
+    const updatedMargaritas = margaritas.filter(marg => marg.id !== margarita.id)
+    setMargaritas(updatedMargaritas)
+  };
+
   return (
     <div className="App">
       <NavBar />
       <Routes>
         <Route path="/margaritas" element={<DrinkList margaritas={margaritas} />} />
-        <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas}/>}/>
+        <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas} onDrinkDelete={deleteRecipe}/>}/>
         <Route path="/newmargarita" element={<NewMargarita onAddMargarita={addMargarita}/>} />
         <Route path="/" element={<Home/>} />
       </Routes>

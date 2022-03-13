@@ -9,10 +9,10 @@ function MargaritaCard({margaritas, onDrinkDelete}) {
 
   function handleDelete() {
     fetch(`http://localhost:3000/margaritas/${margarita.id}`, {
-      method: "DELETE"
+      method: "DELETE",
     }) 
     .then(r => r.json())
-    .then(marg => onDrinkDelete(marg))
+    .then(()=> onDrinkDelete(margarita))
   };
 
   return (
