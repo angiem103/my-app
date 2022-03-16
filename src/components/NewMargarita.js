@@ -10,6 +10,8 @@ function NewMargarita({onAddMargarita}) {
   const [ingredients, setIngredients] = useState('');
   const [directions, setDirections] = useState('');
 
+  console.log(name)
+
   const navigate = useNavigate();
 
   function handleSubmit(e){

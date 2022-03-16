@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 function MargaritaCard({margaritas, onDrinkDelete}) {
 
   const params = useParams();
-  const margarita = margaritas[params.id - 1];
+  const margarita = margaritas.find((marg) => marg.id == params.id);
   const navigate = useNavigate()
 
   function handleDelete() {
@@ -19,19 +19,23 @@ function MargaritaCard({margaritas, onDrinkDelete}) {
     })
   };
 
-  return (
+  return margarita ? 
+
+   (
     <div className='text'>
-      <h3>{margarita?.name}</h3>
-      <img className = 'image' src={margarita?.image} alt={margarita?.name}></img>
+      <h3>{margarita.name}</h3>
+      <img className = 'image' src={margarita.image} alt={margarita.name}></img>
       <br></br>
       Ingredients:
-      <p>{margarita?.ingredients}</p>
+      <p>{margarita.ingredients}</p>
       Directions:
-      <p>{margarita?.directions}</p>
+      <p>{margarita.directions}</p>
       <button onClick={handleDelete}>Delete Recipe</button>
     </div>
-  );
-};
+  )
+ : <p>Margarita not found</p>
+
+   }
 
 export default MargaritaCard;
 
